@@ -128,7 +128,7 @@ function newscoreboardtab(name) {
     // Set the clock
     tr.controls.querySelector('#clock-set-submit').addEventListener('click', (e) => {
         e.preventDefault();
-        let minutes = gir(tr.controls.querySelector('#clock-set-minutes').value, 0, 99);
+        let minutes = gir(tr.controls.querySelector('#clock-set-minutes').value, 0, 200);
         let seconds = gir(tr.controls.querySelector('#clock-set-seconds').value, 0, 59);
         clockset(name, ((minutes * 60) + seconds) * 1000);
     });
